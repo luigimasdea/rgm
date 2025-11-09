@@ -4,6 +4,17 @@
   box-sizing: border-box;
 }
 
+a {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+a:hover {
+    color: #ff6b35;
+    text-decoration: none;
+}
+
 body {
   font-family:
     -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen, Ubuntu,
