@@ -12,7 +12,6 @@ body {
   color: #333;
 }
 
-/* Navigation */
 nav {
   position: fixed;
   top: 0;
@@ -71,7 +70,6 @@ nav.scrolled .logo {
   color: #ff6b35;
 }
 
-/* Hero Section */
 .hero {
   height: 100vh;
   background:
@@ -140,7 +138,6 @@ nav.scrolled .logo {
   transform: translateY(-2px);
 }
 
-/* Services Section */
 .services {
   padding: 6rem 2rem;
   background: #f8f9fa;
@@ -209,7 +206,6 @@ nav.scrolled .logo {
   line-height: 1.8;
 }
 
-/* Projects Section */
 .projects {
   padding: 6rem 2rem;
   background: white;
@@ -253,12 +249,11 @@ nav.scrolled .logo {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
   color: white;
   padding: 2rem;
-  transform: translateY(60px);
   transition: transform 0.3s;
 }
 
 .project-card:hover .project-overlay {
-  transform: translateY(0);
+  transform: translateY(-10px);
 }
 
 .project-overlay h3 {
@@ -271,7 +266,6 @@ nav.scrolled .logo {
   font-weight: 600;
 }
 
-/* About Section */
 .about {
   padding: 6rem 2rem;
   background: #1a1a1a;
@@ -320,7 +314,6 @@ nav.scrolled .logo {
   opacity: 0.8;
 }
 
-/* Contact Section */
 .contact {
   padding: 6rem 2rem;
   background: #f8f9fa;
@@ -405,7 +398,6 @@ nav.scrolled .logo {
   min-height: 150px;
 }
 
-/* Footer */
 footer {
   background: #1a1a1a;
   color: white;
@@ -413,7 +405,6 @@ footer {
   text-align: center;
 }
 
-/* Animations */
 @keyframes fadeInUp {
   from {
     opacity: 0;
@@ -425,7 +416,6 @@ footer {
   }
 }
 
-/* Responsive */
 @media (max-width: 768px) {
   .hero h1 {
     font-size: 2.5rem;
