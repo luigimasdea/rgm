@@ -113,8 +113,7 @@ nav.static a {
   height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("https://images.unsplash.com/photo-1541888946425-d81bb19240f5?w=1600&q=80")
-      center/cover;
+    url("images/Hero.jpg") center/cover;
   display: flex;
   align-items: center;
   color: white;
@@ -293,11 +292,12 @@ nav.static a {
   background: linear-gradient(to top, rgba(0, 0, 0, 0.9), transparent);
   color: white;
   padding: 2rem;
-  transition: transform 0.3s;
+  transition: all 0.3s;
+  height: 40%;
 }
 
 .project-card:hover .project-overlay {
-  transform: translateY(-10px);
+  height: 50%
 }
 
 .project-overlay h3 {
