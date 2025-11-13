@@ -470,6 +470,10 @@ nav.static a {
   border-color: #ff6b35;
 }
 
+.form-group input[type="checkbox"]:focus {
+  outline: 2px solid #ff6b35;
+}
+
 .form-group textarea {
   resize: vertical;
   min-height: 150px;
