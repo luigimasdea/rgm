@@ -72,12 +72,9 @@ nav.static a {
   align-items: center;
 }
 
-.logo {
-  font-size: 1.8rem;
-  font-weight: bold;
-  color: white;
-  text-decoration: none;
-  transition: color 0.3s;
+#navbar img {
+  height: 60px;
+  width: auto;
 }
 
 .nav-links {
@@ -97,6 +94,29 @@ nav.static a {
   color: #ff6b35;
 }
 
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s;
+  border-radius: 3px;
+}
+
+nav.scrolled .menu-toggle span {
+  background: #333;
+}
+
 .back-link {
   color: #666;
   text-decoration: none;
@@ -114,8 +134,9 @@ nav.static a {
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
     /* url("images/Hero.jpg") center/cover; */
-    url("https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?w=1048&q=80") center/cover;
-   display: flex;
+      url("https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?w=1048&q=80")
+      center/cover;
+  display: flex;
   align-items: center;
   color: white;
   position: relative;
@@ -157,6 +178,7 @@ nav.static a {
   border: none;
   cursor: pointer;
   font-size: 1rem;
+  text-align: center;
 }
 
 .btn-primary {
@@ -298,7 +320,7 @@ nav.static a {
 }
 
 .project-card:hover .project-overlay {
-  height: 50%
+  height: 50%;
 }
 
 .project-overlay h3 {
@@ -599,6 +621,61 @@ footer {
 
   .nav-links {
     display: none;
+  }
+
+  .menu-toggle {
+    display: flex;
+  }
+
+  .nav-links {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    height: 100vh;
+    width: 70%;
+    max-width: 300px;
+    background: white;
+    display: flex; /* Assicura che sia flessibile */
+    z-index: 1000; /* Livello appena sotto il bottone (1001) */
+    flex-direction: column;
+    padding: 5rem 2rem 2rem;
+    box-shadow: -2px 0 10px rgba(0, 0, 0, 0.1);
+    transition: right 0.3s ease;
+    gap: 0;
+  }
+
+  .nav-links.active {
+    right: 0;
+  }
+
+  .nav-links li {
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+  }
+
+  .nav-links a {
+    display: block;
+    padding: 1rem 0;
+    color: #333;
+    font-size: 1.1rem;
+  }
+
+  .nav-links a:hover {
+    color: #ff6b35;
+    padding-left: 0.5rem;
+  }
+
+  /* Hamburger animation quando aperto */
+  .menu-toggle.active span:nth-child(1) {
+    transform: rotate(45deg) translate(8px, 8px);
+  }
+
+  .menu-toggle.active span:nth-child(2) {
+    opacity: 0;
+  }
+
+  .menu-toggle.active span:nth-child(3) {
+    transform: rotate(-45deg) translate(7px, -7px);
   }
 
   .about-content,

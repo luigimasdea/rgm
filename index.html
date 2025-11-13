@@ -7,17 +7,23 @@
     <title>RGM Costruzioni SRL</title>
     <link rel="icon" type="image/png" href="images/favicon.png" />
     <link rel="stylesheet" href="style.css" />
-    <source src="main.js" />
   </head>
   <body>
     <!-- Navigation -->
     <!-- TODO: Floating menu on sm screens -->
     <nav id="navbar">
       <div class="nav-container">
-        <a href="#" class="logo">
-          <img src="images/Logo-bianco-120.png" alt="Logo" style="width: 50%;">
+        <a href="#">
+          <img src="images/Logo-half-primary.png" alt="Logo" />
         </a>
-        <ul class="nav-links">
+
+        <button class="menu-toggle" id="menuToggle" aria-label="Menu">
+            <span></span>
+            <span></span>
+            <span></span>
+        </button>
+
+        <ul class="nav-links" id="navLinks">
           <li><a href="#home">Home</a></li>
           <li><a href="#servizi">Servizi</a></li>
           <li><a href="#progetti">Progetti</a></li>
@@ -284,5 +290,8 @@
         </p>
       </div>
     </footer>
+
+
+    <script src="main.js"></script>
   </body>
 </html>
