@@ -1,3 +1,4 @@
+<<<<<<< Updated upstream
   // Navbar scroll effect
   window.addEventListener('scroll', function() {
       const navbar = document.getElementById('navbar');
@@ -8,6 +9,8 @@
       }
   });
 
+=======
+>>>>>>> Stashed changes
   // Smooth scrolling
   document.querySelectorAll('a[href^="#"]').forEach(anchor => {
       anchor.addEventListener('click', function (e) {

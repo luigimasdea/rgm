@@ -35,19 +35,6 @@ nav {
   transition: all 0.3s;
 }
 
-nav.scrolled {
-  background: white;
-  box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
-}
-
-nav.scrolled a {
-  color: #333;
-}
-
-nav.scrolled .logo {
-  color: #ff6b35;
-}
-
 /* Navigation for static pages (privacy policy) */
 nav.static {
   position: sticky;
@@ -97,6 +84,28 @@ nav.static a {
   color: #ff6b35;
 }
 
+<<<<<<< Updated upstream
+=======
+.menu-toggle {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem;
+  z-index: 1001;
+}
+
+.menu-toggle span {
+  width: 25px;
+  height: 3px;
+  background: white;
+  transition: all 0.3s;
+  border-radius: 3px;
+}
+
+>>>>>>> Stashed changes
 .back-link {
   color: #666;
   text-decoration: none;
