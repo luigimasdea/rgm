@@ -59,7 +59,7 @@ nav.static a {
   align-items: center;
 }
 
-#navbar img {
+.nav-container img {
   height: 60px;
   width: auto;
 }
@@ -101,7 +101,7 @@ nav.static a {
 }
 
 .back-link {
-  color: #666;
+  color: white;
   text-decoration: none;
   font-weight: 500;
   transition: color 0.3s;
@@ -116,7 +116,6 @@ nav.static a {
   height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    /* url("images/Hero.jpg") center/cover; */
       url("https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?w=1048&q=80")
       center/cover;
   display: flex;
@@ -494,11 +493,10 @@ footer {
 
 .privacy-container {
   max-width: 900px;
-  margin: 0 auto;
+  margin: 2rem auto;
+  margin-top: 6rem;
   padding: 4rem 2rem;
   background: white;
-  margin-top: 2rem;
-  margin-bottom: 2rem;
   border-radius: 12px;
   box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
 }
@@ -688,6 +686,7 @@ footer {
 
   .privacy-container {
     padding: 2rem 1.5rem;
-    margin-top: 6rem;
+    margin: 0 auto;
+    margin-top: 5rem;
   }
 }
