@@ -116,8 +116,7 @@ nav.static a {
   height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("assets/hero.jpg")
-    center/cover;
+    url("assets/hero.jpg") center/cover;
   display: flex;
   align-items: center;
   color: white;
@@ -657,7 +656,8 @@ footer {
 
   /* Hamburger animation quando aperto */
   .menu-toggle.active span:nth-child(1) {
-    transform: rotate(45deg) translate(8px, 8px);
+    transform: translateY(8px) rotate(45deg);
+    background: #333;
   }
 
   .menu-toggle.active span:nth-child(2) {
@@ -665,7 +665,8 @@ footer {
   }
 
   .menu-toggle.active span:nth-child(3) {
-    transform: rotate(-45deg) translate(7px, -7px);
+    transform: translateY(-8px) rotate(-45deg);
+    background: #333;
   }
 
   .about-content,
