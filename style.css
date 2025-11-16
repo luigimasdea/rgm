@@ -682,6 +682,10 @@ footer {
     font-size: 2rem;
   }
 
+  .contact-form {
+    padding: 3rem 1.5rem;
+  }
+
   .privacy-container h1 {
     font-size: 2rem;
   }
