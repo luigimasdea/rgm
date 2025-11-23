@@ -74,6 +74,7 @@ nav.static a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  font-size: 18px;
   transition: color 0.3s;
 }
 
@@ -104,6 +105,7 @@ nav.static a {
   color: white;
   text-decoration: none;
   font-weight: 500;
+  font-size: 18px;
   transition: color 0.3s;
 }
 
@@ -295,7 +297,7 @@ nav.static a {
   right: 0;
   background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
   color: white;
-  padding: 2rem;
+  padding: 1.5rem;
   transition: all 0.3s;
   height: 45%;
 }
@@ -680,6 +682,10 @@ footer {
 
   .section-title h2 {
     font-size: 2rem;
+  }
+
+  .contact-form {
+    padding: 3rem 1.5rem;
   }
 
   .privacy-container h1 {
