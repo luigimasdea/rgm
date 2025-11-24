@@ -65,6 +65,16 @@ const projectGalleries = {
         'assets/casa_corr/foto8.jpeg',
         'assets/casa_corr/foto9.jpeg',
         'assets/casa_corr/foto10.jpeg'
+    ],
+    'galleria': [
+        'assets/galleria/foto1.jpeg',
+        'assets/galleria/foto2.jpeg',
+        'assets/galleria/foto3.jpeg',
+        'assets/galleria/foto4.jpeg',
+        'assets/galleria/foto5.jpeg',
+        'assets/galleria/foto6.jpeg',
+        'assets/galleria/foto7.jpeg',
+        'assets/galleria/foto8.jpeg',
     ]
 };
 
