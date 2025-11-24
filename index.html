@@ -169,12 +169,14 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" onclick="openGallery('casa_corr')" data-gallery="true">
             <img src="assets/casa-corr.jpeg" alt="Progetto 3" loading="lazy" />
             <div class="project-overlay">
               <span class="project-category">Residenziale</span>
               <h3>Villetta - Parma</h3>
+              <span class="project-images-count">📷 10 foto</span>
             </div>
+            <div class="gallery-icon">🔍</div>
           </div>
 
           <div class="project-card" onclick="openGallery('caseificio')" data-gallery="true">
@@ -182,7 +184,9 @@
             <div class="project-overlay">
               <span class="project-category">Agroalimentare</span>
               <h3>Stabilimento Caseario - Parma</h3>
+              <span class="project-images-count">📷 10 foto</span>
             </div>
+            <div class="gallery-icon">🔍</div>
           </div>
 
           <div class="project-card">
@@ -330,9 +334,9 @@
     <div id="lightbox" class="lightbox">
         <span class="lightbox-close">&times;</span>
         <div class="lightbox-content">
-            <button class="lightbox-prev">❮</button>
+            <button class="lightbox-prev" aria-label="Immagine precedente">❮</button>
             <img id="lightbox-img" src="" alt="">
-            <button class="lightbox-next">❯</button>
+            <button class="lightbox-next" aria-label="Immagine successiva">❯</button>
         </div>
         <div class="lightbox-counter">
             <span id="lightbox-counter-text"></span>

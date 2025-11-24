@@ -53,6 +53,18 @@ const projectGalleries = {
         'assets/caseificio/foto8.jpeg',
         'assets/caseificio/foto9.jpeg',
         'assets/caseificio/foto10.jpeg'
+    ],
+    'casa_corr': [
+        'assets/casa_corr/foto1.jpeg',
+        'assets/casa_corr/foto2.jpeg',
+        'assets/casa_corr/foto3.jpeg',
+        'assets/casa_corr/foto4.jpeg',
+        'assets/casa_corr/foto5.jpeg',
+        'assets/casa_corr/foto6.jpeg',
+        'assets/casa_corr/foto7.jpeg',
+        'assets/casa_corr/foto8.jpeg',
+        'assets/casa_corr/foto9.jpeg',
+        'assets/casa_corr/foto10.jpeg'
     ]
 };
 
@@ -70,7 +82,7 @@ function openGallery(projectId) {
     currentIndex = 0;
     showImage();
     document.getElementById('lightbox').classList.add('active');
-    document.body.style.overflow = 'hidden'; // Blocca scroll pagina
+    document.body.style.overflow = 'hidden';
 }
 
 // Mostra immagine corrente
@@ -85,7 +97,7 @@ function showImage() {
 // Chiudi lightbox
 function closeLightbox() {
     document.getElementById('lightbox').classList.remove('active');
-    document.body.style.overflow = ''; // Ripristina scroll
+    document.body.style.overflow = '';
 }
 
 // Event listeners
