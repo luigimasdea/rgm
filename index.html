@@ -161,28 +161,34 @@
             </div>
           </div>
 
-          <div class="project-card">
+          <div class="project-card" onclick="openGallery('galleria')" data-gallery="true">
             <img src="assets/autostrada.jpeg" alt="Progetto 2" loading="lazy" />
             <div class="project-overlay">
               <span class="project-category">Infrastrutture</span>
               <h3>Opere Autostradali - A12</h3>
+              <span class="project-images-count">📷 8 foto</span>
             </div>
+            <div class="gallery-icon">🔍</div>
           </div>
 
-          <div class="project-card">
-            <img src="assets/lynx.jpeg" alt="Progetto 3" loading="lazy" />
+          <div class="project-card" onclick="openGallery('casa_corr')" data-gallery="true">
+            <img src="assets/casa-corr.jpeg" alt="Progetto 3" loading="lazy" />
             <div class="project-overlay">
-              <span class="project-category">Industriale</span>
-              <h3>Industria Alimentare</h3>
+              <span class="project-category">Residenziale</span>
+              <h3>Villetta - Parma</h3>
+              <span class="project-images-count">📷 10 foto</span>
             </div>
+            <div class="gallery-icon">🔍</div>
           </div>
 
-          <div class="project-card">
-            <img src="assets/caseificio.jpeg" alt="Progetto 4" loading="lazy" />
+          <div class="project-card" onclick="openGallery('caseificio')" data-gallery="true">
+            <img src="assets/caseificio/foto1.jpeg" alt="Progetto 4" loading="lazy" />
             <div class="project-overlay">
               <span class="project-category">Agroalimentare</span>
               <h3>Stabilimento Caseario - Parma</h3>
+              <span class="project-images-count">📷 10 foto</span>
             </div>
+            <div class="gallery-icon">🔍</div>
           </div>
 
           <div class="project-card">
@@ -325,6 +331,19 @@
         </p>
       </div>
     </footer>
+
+    <!-- Lightbox Modal -->
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <div class="lightbox-content">
+            <button class="lightbox-prev" aria-label="Immagine precedente">❮</button>
+            <img id="lightbox-img" src="" alt="">
+            <button class="lightbox-next" aria-label="Immagine successiva">❯</button>
+        </div>
+        <div class="lightbox-counter">
+            <span id="lightbox-counter-text"></span>
+        </div>
+    </div>
 
     <script src="main.js"></script>
 
