@@ -3,9 +3,8 @@
   height: 100vh;
   background:
     linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.3)),
-    url("assets/hero.jpg") center/cover;
+    url("../assets/hero.jpg") center/cover;
     /* url("https://images.unsplash.com/photo-1579847188804-ecba0e2ea330?w=1048&q=80") center/cover; */
-
   display: flex;
   align-items: center;
   color: white;
