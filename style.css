@@ -725,6 +725,11 @@ footer {
     padding: 3rem 1.5rem;
   }
 
+  .form-group input[type="checkbox"] a:hover {
+    color: #ff6b35;
+    text-decoration: none;
+  }
+
   .privacy-container h1 {
     font-size: 2rem;
   }
