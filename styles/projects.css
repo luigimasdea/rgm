@@ -54,21 +54,34 @@
   bottom: 0;
   left: 0;
   right: 0;
-  background: linear-gradient(to top, rgba(0, 0, 0, 1), transparent);
+  
+  background: linear-gradient(to top, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.6) 70%, transparent 100%);
   color: white;
-  padding: 2rem 2rem 2.5rem 2rem;
-  transition: all 0.3s;
-  height: 40%;
+  
+  padding: 4rem 2rem 2rem 2rem;
+  transition: all 0.3s ease;
+  
+  height: auto;
+  max-height: 100%; /* Per sicurezza, non superare l'immagine */
+  
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end; /* Questo ancora tutto in basso */
+  align-items: flex-start;
 }
 
 .project-card:hover .project-overlay {
-  height: 50%;
+  background: linear-gradient(to top, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.7) 80%, transparent 100%);
+  padding-bottom: 3.5rem; /* Piccolo effetto "lift" verso l'alto */
 }
 
 .project-overlay h3 {
   font-size: 1.4rem;
-  line-height: 1.4;
+  line-height: 1.3; /* Leggermente più stretto per titoli multilinea */
+  margin-top: 0.5rem;
   margin-bottom: 0;
+  width: 100%;
+  word-wrap: break-word; /* Evita rotture su schermi molto piccoli */
 }
 
 .project-category {
