@@ -124,9 +124,7 @@
   .contact-form {
     padding: 3rem 1.5rem;
   }
-}
 
-@media (max-width: 768px) {
   .contact-item a,
   .form-group a {
     color: #ff6b35 !important;
