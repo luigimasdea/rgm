@@ -139,7 +139,6 @@ nav {
 /* Mobile Optimization */
 @media (max-width: 768px) {
   .nav-links a {
-    display: block;
     padding: 1.2rem 0;
     font-size: 1.2rem;
     border-bottom: 1px solid #f0f0f0;
@@ -156,4 +155,10 @@ nav {
     color: #ff6b35;
     opacity: 0.5;
   }
+}
+
+.menu-toggle {
+  min-width: 50px;
+  min-height: 50px;
+  padding: 1rem;
 }
